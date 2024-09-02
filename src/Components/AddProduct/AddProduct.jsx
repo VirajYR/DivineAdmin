@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-const apiUrl = process.env.REACT_APP_API_URL;
+const apiUrl = "divinedelight.me";
 import "./AddProduct.css"
 import uploadArea from "../../assets/upload_area.svg"
 const AddProduct = () => {
@@ -21,7 +21,7 @@ const AddProduct = () => {
 
         let formData = new FormData();
         formData.append('product', image);
-        await fetch(`${apiUrl}:3000/upload`, {
+        await fetch(`divinedelight.me:3000/upload`, {
             method: "post",
             headers: {
                 Accept: "application/json",
@@ -31,7 +31,7 @@ const AddProduct = () => {
         if (responseData.success) {
             product.image = responseData.image_url;
             console.log(product);
-            await fetch(`${apiUrl}:3000/addproduct`, {
+            await fetch(`divinedelight.me:3000/addproduct`, {
                 method: "post",
                 headers: {
                     Accept: "application/json",

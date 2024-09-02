@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-const apiUrl = process.env.REACT_APP_API_URL;
+const apiUrl ="divinedelight.me";
 import "./ListProduct.css"
 import crossicon from "../../assets/cross_icon.png"
 const ListProduct = () => {
@@ -12,7 +12,7 @@ const ListProduct = () => {
     fetchInfo();
   }, []);
   const removeProduct = async (id) => {
-    await fetch(`${apiUrl}:3000/removeproduct`, {
+    await fetch(`divinedelight.me:3000/removeproduct`, {
 
       method: "post",
       headers: {
