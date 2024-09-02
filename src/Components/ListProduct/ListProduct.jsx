@@ -5,14 +5,14 @@ import crossicon from "../../assets/cross_icon.png"
 const ListProduct = () => {
   const [allProducts, setAllProducts] = useState([]);
   const fetchInfo = async () => {
-    await fetch("divinedelight.me:3000/allproducts").then((res) => res.json()).then((data) => { setAllProducts(data) });
+    await fetch("https://divinedelight.me:3000/allproducts").then((res) => res.json()).then((data) => { setAllProducts(data) });
 
   }
   useEffect(() => {
     fetchInfo();
   }, []);
   const removeProduct = async (id) => {
-    await fetch(`divinedelight.me:3000/removeproduct`, {
+    await fetch(`https://divinedelight.me:3000/removeproduct`, {
 
       method: "post",
       headers: {
