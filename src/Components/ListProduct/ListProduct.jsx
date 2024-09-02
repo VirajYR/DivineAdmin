@@ -5,7 +5,7 @@ import crossicon from "../../assets/cross_icon.png"
 const ListProduct = () => {
   const [allProducts, setAllProducts] = useState([]);
   const fetchInfo = async () => {
-    await fetch(`${apiUrl}:3000/allproducts`).then((res) => res.json()).then((data) => { setAllProducts(data) });
+    await fetch("divinedelight.me:3000/allproducts").then((res) => res.json()).then((data) => { setAllProducts(data) });
 
   }
   useEffect(() => {
