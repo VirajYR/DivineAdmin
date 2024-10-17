@@ -1,0 +1,87 @@
+.Login {
+    display: flex;
+    align-items: center;
+    height: 86vh;
+    justify-content: flex-end;
+    background-image: url("https://5.imimg.com/data5/SELLER/Default/2024/4/411681197/QQ/LW/BX/265737/perfume-spray-fragrance.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0;
+    overflow: hidden;
+}
+
+.LoginBox {
+    border-radius: 10px; /* Slightly increased border radius */
+    z-index: 1;
+    padding: 40px 60px; /* Adjusted padding for better spacing */
+    background: linear-gradient(to bottom, rgba(194, 219, 191, 0.9), rgba(255, 255, 255, 0.9)); /* More transparent */
+    margin-right: 100px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+    height: 340px;
+    width: 360px;
+}
+.LoginBox h2{
+
+}
+
+.UserLogo img {
+    width: 50px; /* Increased size for better visibility */
+    z-index: 2;
+    position: absolute;
+      margin-left: 184px;
+    margin-top: -178px;
+}
+
+.inputs {
+    margin: 20px 0; /* Increased margin for better spacing */
+}
+
+input {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding for better touch target */
+    margin: 10px 0; /* Margin between inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Increased font size */
+}
+
+input:focus {
+    border-color: #5cb85c; /* Green border on focus */
+    outline: none; /* Remove default outline */
+}
+
+.LoginBtn {
+    margin-top: 20px;
+    display: flex; /* Flex for alignment */
+    gap: 10px; /* Space between buttons */
+}
+
+button {
+    padding: 12px 24px; /* Slightly larger padding */
+    border: none; /* Remove border */
+    border-radius: 8px; /* More rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease, transform 0.2s; /* Smooth transitions */
+}
+
+button.login {
+    background-color: #5cb85c; /* Green background for login */
+    color: white; /* White text */
+}
+
+button.login:hover {
+    background-color: #4cae4c; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+button.logout {
+    background-color: #d9534f; /* Red background for logout */
+    color: white; /* White text */
+}
+
+button.logout:hover {
+    background-color: #c9302c; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
